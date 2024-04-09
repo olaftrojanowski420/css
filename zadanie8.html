@@ -1,0 +1,44 @@
+<html>
+ <head>
+ <style>
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+</style>
+ <meta charset=utf-8>
+ </head>
+<body>
+<h1><b>Styl wewnętrzny</b></h1>
+ <ol>
+ <li><h1>gdzie jest wstawiany,</h1> <br>
+<font face=Arial><TEXTAREA cols=84% rows=2>Wstawia się zawsze w części nagłówkowej dokumentu (pomiędzy znacznikami <head> a 
+</head>). </TEXTAREA>
+
+<li><h1>składnia teoretyczna (w ramce, konieczne wcięcia),</h1><br>
+<table width=100%  align="center">
+ <tr>
+ <td align=center width=100%><TEXTAREA cols=84% rows=11>
+<head>
+     (...)
+ <style type="text/css">
+ /* <![CDATA[ */
+     selektor1 { cecha: wartość; cecha2: wartość2... }
+     selektor2 { cecha: wartość; cecha2: wartość2... }
+     (...)
+ /* ]]> */
+ </style>
+       (...)
+</head>
+</TEXTAREA>
+</table>
+<li><h1>jakie mogą być selektory</b>,</h1><br>
+Selektorem może być praktycznie dowolny znacznik, np. p (akapit), h1 (tytuł), td (komórka 
+tabeli) i inne
+
+<li><h1>jakie mogą być cechy i wartości</h1><br>
+Jako "cecha" (w deklaracji stylu - powyżej) należy wpisać o jakie konkretnie atrybuty 
+formatowania nam chodzi. Natomiast jako wyraz "wartość" wpisujemy dokładną wartość atrybutu.
+
+</body>
+</html>

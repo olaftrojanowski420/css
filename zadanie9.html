@@ -1,0 +1,75 @@
+<html>
+ <head>
+ <style>
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+</style>
+ <meta charset=utf-8>
+ </head>
+<body>
+ <ol>
+ <li><h1>Składnia teoretyczna &rarr; otoczony ramką (może być tabela jedno komórkowa, 
+konieczne wcięcia).</h1> <br>
+<font face=Arial><table width=100%  align="center">
+ <tr>
+ <td align=center width=100%><TEXTAREA cols=84% rows=5>
+<head>
+      (...)
+      <link rel="Stylesheet" type="text/css" href="style.css" />
+      (...)
+</head>
+</TEXTAREA>
+</table>
+<li><h1>Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz 
+ile razy może on występować w dokumencie, jako podłączenie stylu CSS?
+</h1><br>
+Styl zewnętrzny wstawiany jest między znacznikami head. Znacznik odpowiedzialny za to to LINK.
+Mozna go wstawić w dowolnej ilości w dokumencie.
+<li><h1>Jak jest najprostsza forma wstawiania stylu zewnętrznego &rarr; otoczony ramką (może 
+być tabela jedno komórkowa?</h1><br>
+<font face=Arial><table width=100%  align="center">
+<tr>
+ <td align=center width=100%><TEXTAREA cols=84% rows=1>
+<link rel="Stylesheet" type="text/css" href="style.css" />
+</TEXTAREA>
+</table>
+
+<li><h1>le arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasad 
+musi być zachowana przy większej ilości dołączanych styli?</h1><br>
+Można dołączyć <b><u>dowolną liczbę</b></u> zewnętrznych arkuszy stylów każdy jako osobny element. Trzeba pamiętać, że znacznik LINK może znajdować się tylko i wyłącznie w 
+nagłówku dokumentu. (sekcja head)  
+<li><h1>Co się dzieje w przypadku konfliktów? Przez konflikt rozumiemy, gdy te same style 
+są definiowane w różnych arkuszach styli podłączone do tego samego arkusza.</h1><br>
+W przypadku <b><u>konfliktów</b></u>, ważniejsze będą deklaracje z arkusza dołączonego później.
+<li><h1>Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?</h1><br>
+Zewnętrzny styl jest plikiem tekstowym, który edytujemy osobno od pliku html.
+<li><h1>Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?</h1><br>
+Tworzone pliki od razu są plikami arkusza stylów, a nie txt
+<li><h1>Jakie rozszerzenie posiadają plik będący zewnętrznym arkuszem styli?</h1><br>
+Posiadają rozszerzenie .css
+<li><h1>Jakie są zalety zewnętrznego arkusza styli( dwie – z użyciem wyliczenia)</h1><br>
+<ol>
+<li>wszystkie nasze strony w obrębie całego serwisu mogą mieć pewne wspólne cechy. 
+<li>jeśli w ostatniej chwili zdecydujemy się zmienić np. rodzaj czcionki na wszystkich 
+stronach, możemy to zrobić, modyfikując jedynie zewnętrzny arkusz stylów, bez 
+konieczności zmiany każdej strony osobno. 
+</ol>
+<li><h1>Uwagi na temat pisania w CSS.</h1><br>
+<ol>
+<li>Język CSS dopuszcza stosowanie zarówno dużych, jak i małych liter. 
+Poprawnymi nazwami atrybutu są background, backGROUND oraz BACKground.
+<li>Wstawienie białych znaków (spacje, tabulacje, znaki nowej linii) w arkuszu CSS nie ma 
+wpływu na jego działanie
+<li>Komentarze w arkuszu stylów 
+pisze się używając znaków: /* (otworzenie komentarza) oraz */ (zamknięcie komentarza), 
+np.: /*to jest komentarz*/. 
+Wszystko pomiędzy tymi znakami jest ignorowane przez przeglądarkę
+<li>Część poleceń stylów CSS nie sa interpretowane przez niektóre przeglądarki internetowe lub 
+jest obsługiwana odmiennie. Dlatego zawsze należy sprawdzać efekty w praktyce - jeśli to 
+możliwe, to najlepiej w kilku najbardziej popularnych przeglądarkach: Microsoft Internet 
+Explorer, Netscape/Mozilla/Firefox (czyli przeglądarki oparte na silniku Gecko), Opera. 
+</ol>
+</body>
+</html>

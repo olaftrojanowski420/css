@@ -1,0 +1,58 @@
+<html>
+ <head>
+<style>
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+</style>
+ <meta charset=utf-8>
+ </head>
+<body>
+ <h1><b> Sposoby podłączania styli do strony (skrócone zestawienie).</b>
+ <h2>1)<u>Zewnętrzny</u> arkusz stylów.
+ <table width=100%  align="center" style="border-collapse: collapse;">
+ <tr>
+ <td align=center width=100% colspan=2><TEXTAREA cols=90% rows=3><head>
+<link rel="Stylesheet" type="text/css" href="style.css" />
+</head>
+</TEXTAREA>
+</table>
+<h2>2)Styl <u>lokalny</u> inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli
+dopisanie arkusza do wybranego bloku treści strony.
+<table width=100%  align="center">
+ <tr>
+ <td align=center width=100%><TEXTAREA cols=90% rows=1><selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor>
+</TEXTAREA>
+</table>
+<h2>3)<u>Wewnętrzny</u> arkusz stylów.
+<table width=100%  align="center">
+ <tr>
+ <td align=center width=100%><TEXTAREA cols=90% rows=6><head>
+ <style type="text/css">
+ selektor1 { cecha: wartość; cecha2: wartość2... }
+ selektor2 { cecha: wartość; cecha2: wartość2... }
+ </style>
+</head>
+</TEXTAREA>
+</table>
+<h2>4)<u>Alternatywny</u> arkusz stylów
+<table width=100%  align="center">
+ <tr>
+ <td align=center width=100%><TEXTAREA cols=90% rows=5><head>
+<link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" />
+<link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" />
+<link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" />
+</head>
+</TEXTAREA>
+</table>
+<h2>5)<u>Import</u> arkusza stylów
+<table width=100%  align="center">
+ <tr>
+ <td align=center width=100%><TEXTAREA cols=90% rows=3><style type="text/css">
+ @import url(adres zewnętrznego arkusza stylów);
+</style>
+</TEXTAREA>
+</table>
+</body>
+</html>
